@@ -15,6 +15,7 @@
     --segunda-fonte: Bebas Neue , cursive;
 }
 body{
+    font-family: 'Lato', sans-serif;
     font-family: var(--segunda-fonte);
 }
 /* CABEÇALHO, IMAGEM, NAVS*/
@@ -54,15 +55,15 @@ header li:last-child{
 ul, nav{ /* tirei as bolinhas da lista*/
     list-style: none;
 }
-a{
+a#logo{
     text-decoration: none;
     cursor: pointer;
     opacity: 0.9;
 }
-a:hover{
-    opacity: 1;
+a :hover{
+    opacity: 10;
 }
-/* CORPO (HERO) */
+/* CORPO (IMAGEMINICIO) */
 .imageminicio{
     color: #fff;
     background-image: url(imagens/imagenseditadas/barco01.jpg);
@@ -78,53 +79,72 @@ a:hover{
     text-align: center;
 } 
 
-
-.imageminicio p{
-    display: inline-block;
-    background-color: rgba(128, 128, 128, 0.445);
-    color: rgba(238, 236, 232, 0.685);
-    font-weight: bold;
-    /*sombras no testo sao sempre 3 e a cor*/
-    text-shadow: 1px 1px 1px rgb(88, 88, 86);
-}
-
-/*.hero{
-    color: #fff;
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 0;
-    padding-top: 56.25%;
-    text-align: center;*/
-}
-/*.hero img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}*/
 @media(max-width: 700px){
-    .hero{max-width: 700px;}
+    .imageminicio{max-width: 700px;}
 }
-.hero h1{
+.imageminicio h1{
     color: white;
-    font-size: 3.2em;
+    font-size: 4.2em;
     margin-bottom: 15px;
     
 }
-.hero h3{
-    font-size: 2em;
+.imageminicio h3{
+    font-size: 2.5em;
     margin-bottom: 30px;
 }
-.btn{
-    text-transform: uppercase; /*deixar em maiusculo*/ 
+.wrapper{
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -30%);
+  }
+  
+  a#botaos{
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #f7f1f1;
+    border: 2px solid #f1ecec;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+  }
+  
+  a#botaos span{
+    position: relative;
+    z-index: 2;
+  }
+  
+  a#botaos:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(168, 218, 245);
+    transition: all .35s;
+  }
+  
+  a#botaos:hover{
+    color: #fff;
+  }
+  
+  a#botaos:hover:after{
+    width: 100%;
+  }
+
+/*.btn{
     color: #191c03;
     padding: 20px 50px;
     background-color: #fff;
     border-radius: 4px;
-}
+}*/
 @media(max-width: 700px) {
     .hero h1{font-size: 2.5em;}
     .hero h3{font-size: 1.5em;}
