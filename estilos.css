@@ -76,6 +76,9 @@ a:hover{
     align-items: center;
     text-align: center;
 }
+@media(max-width: 700px){
+    .hero{max-width: 700px;}
+}
 .hero h1{
     font-size: 3.2em;
     margin-bottom: 15px;
