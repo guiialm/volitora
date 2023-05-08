@@ -80,7 +80,7 @@ a :hover{
 } 
 
 @media(max-width: 700px){
-    .imageminicio{max-width: 700px;}
+    .imageminicio{max-width: 700px; position: fixed;}
 }
 .imageminicio h1{
     color: white;
@@ -92,6 +92,7 @@ a :hover{
     font-size: 2.5em;
     margin-bottom: 30px;
 }
+/*Botao*/
 .wrapper{
     
     top: 50%;
@@ -138,6 +139,9 @@ a :hover{
   a#botaos:hover:after{
     width: 100%;
   }
+  @media(max-width: 700px){
+    .imageminicio{max-width: 700px;}
+}
 
 /*.btn{
     color: #191c03;
