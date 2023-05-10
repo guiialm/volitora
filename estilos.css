@@ -21,8 +21,9 @@ body{
 /* CABEÇALHO, IMAGEM, NAVS*/
 header{
     background-color: #fff;
+    height: 90px;
     width: 100%;
-    padding: 20px 50px;
+    padding: 10px 40px;
     position: absolute;
     top: 0;
     left: 0;
@@ -31,16 +32,28 @@ header{
     align-items: center;
 }
 header img{
-    width: 200px;
+    position: relative;
+    top: -19px;
+    width: 150px;
 }
 header nav{
     display: flex;
+}
+header nav:hover{
+    color: rgb(37, 37, 37);
+}
+header  li:hover{
+    
+    border: 1px solid black;
+    border-style: none;
+    background-color:rgb(168, 218, 245);
+    transition-duration: .5s;
 }
 header li, a{
     color: #191c03;
 }
 header li{
-    margin: 0px 15px;
+    margin: 0px 10px;
 }
 header li :first-child{
     margin-left:0 ;
