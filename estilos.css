@@ -38,6 +38,7 @@ header img{
 }
 header nav{
     display: flex;
+    
 }
 header nav:hover{
     color: rgb(37, 37, 37);
@@ -51,6 +52,7 @@ header  li:hover{
 }
 header li, a{
     color: #191c03;
+    text-decoration: none;
 }
 header li{
     margin: 0px 10px;
@@ -143,7 +145,7 @@ a :hover{
     left: 0;
     width: 0;
     height: 100%;
-    background: rgb(168, 218, 245);
+    background: #1C93B2;
     transition: all .35s;
   }
   
@@ -196,8 +198,30 @@ a :hover{
     margin-bottom: 70px;
     border: none;
 }
-.icones img{
+/* ICONES NO RODAPÉ */
+footer{
+    background-color: rgb(177, 174, 174);
+}
+.icones{
+    padding-bottom: 20px;
     text-align: center;
+}
+.icones img{
     width: 50px;
     border-radius: 50%;
+    box-shadow: 2px 2px 2px black;
+    box-sizing: border-box; /* comando pros icones n mexerem com mouse em cima*/
+}
+.icones img:hover{
+    border: 2px solid rgba(255, 255, 255, 0.37);
+    transform: translate(2px, 2px);
+    box-shadow: 5px 5px 10px black;
+    transition-duration: .3s;
+    transform-box: border-box .5s;
+}
+@media(max-width: 600px) {
+    .icones{text-align: center; flex-direction: column;}
+    .icones img{flex-direction: column; border-bottom: 20px;}
+    
+    
 }
