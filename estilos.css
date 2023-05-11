@@ -21,9 +21,8 @@ body{
 /* CABEÇALHO, IMAGEM, NAVS*/
 header{
     background-color: #fff;
-    height: 90px;
-    width: 100vw;
-    padding: 10px 40px;
+    width: 100%;
+    padding: 20px 50px;
     position: absolute;
     top: 0;
     left: 0;
@@ -33,8 +32,9 @@ header{
 }
 header img{
     position: relative;
-    top: -19px;
     width: 150px;
+  /*  top: -19px;
+    width: 150px;*/
 }
 header nav{
     display: flex;
@@ -61,8 +61,8 @@ header li :first-child{
 header li:last-child{
     margin-right: 0;
 }
-@media(max-width: 768px) {
-    header {flex-direction: column;} 
+@media(max-width: 600px) {
+    header {flex-direction: column;width: 100vw; margin: 5px 5px 5px px; } 
     header img{margin-bottom: 15px;}
 }
 ul, nav{ /* tirei as bolinhas da lista*/
