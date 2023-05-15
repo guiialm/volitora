@@ -99,8 +99,11 @@ a :hover{
     .imageminicio{max-width: 700px;}
 }
 .imageminicio h1{
-    margin: auto;
-    padding: 20px;
+    background-color: aqua;
+    margin-top: 10px;
+    padding: 10px;
+    display: block;
+    text-align: center;
     color: white;
     font-size: 4.2em;
     
