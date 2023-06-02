@@ -34,7 +34,7 @@ header{
 header img{
     position: relative;
     width: 150px;
-  /*  top: -19px;
+/*  top: -19px;
     width: 150px;*/
 }
 header nav{
@@ -71,6 +71,8 @@ header li:last-child{
 ul, nav{ /* tirei as bolinhas da lista*/
     list-style: none;
 }
+
+
 a#logo{
     text-decoration: none;
     cursor: pointer;
@@ -99,7 +101,7 @@ a :hover{
     .imageminicio{max-width: 700px;}
 }
 .imageminicio h1{
-    background-color: aqua;
+
     margin-top: 10px;
     padding: 10px;
     display: block;

@@ -4,21 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="mediaquery.css">
     <link rel="stylesheet" href="estilos.css">
     <link rel="shortcut icon" href="imagens/azul.ico" type="image/x-icon">
     <title>Vô Litorar!</title>
 </head>
 <script src="https://kit.fontawesome.com/51f7ea6787.js" crossorigin="anonymous"></script>.
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <a id="logo" href="#"><img src="imagens/Logo_preview_rev_1.png" alt="logo"></a>
-        <nav>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Reservas</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Contato</a></li>
-            <li><a href="#">Login</a></li>
-        </nav>
+        <span id="burguer" class="material-icons" onclick="clickMenu()"></span>
+        <menu id="itens">
+            <nav>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Reservas</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Login</a></li>
+            </nav>
+        </menu>
     </header>
 
     <section class="imageminicio">
@@ -50,5 +55,6 @@
         <a href="https://www.youtube.com/?hl=pt&gl=BR" target="_blank"><img src="imagens/logo-youtube.jpg" alt="logo-youtube"></a>
        </section>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
