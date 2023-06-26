@@ -98,7 +98,7 @@ a :hover{
 } 
 
 @media(max-width: 768px){
-    .imageminicio{max-width: 700px;}
+    .imageminicio{max-width: 700px; margin-top: 200px;}
 }
 .imageminicio h1{
 
@@ -122,6 +122,23 @@ a :hover{
 
 }
 
+@media(max-width: 768px){
+    .text-litoral{max-width: 700px;}
+}
+
+.text-litoral {
+    margin-top:100px;
+}
+
+.text-litoral h3 {
+    margin-top: 0px;
+    margin-bottom: 300px;
+}
+
+@media(max-width: 768px){
+    .wrapper{margin-top: -200px;}
+}
+
 a#botaos{
     display: block;
     width: 200px;
@@ -136,6 +153,7 @@ a#botaos{
     text-align: center;
     position: relative;
     transition: all .35s;
+    margin-top: 40px;
     
 }
 
